@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit a Recipe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="nav-wrapper">
+        <div class="nav">
+            <img src="image.png" alt="Plan & Eat" class="logo" />
+            <ul class="nav-links">
+                <li><a href="cook.html">Cook</a></li>
+                <li><a href="Plan.html">Plan</a></li>
+                <li><a href="shop.html">Shop</a></li>
+            </ul>
+        </div>
+        <div class="account">
+            <a href="Account">Account</a>
+        </div>
+    </nav>
+
+    <section class="form-section">
+        <h2>Submit Your Recipe</h2>
+        <form action="submit-recipe.php" method="POST">
+            <label for="recipe-name">Recipe Name:</label>
+            <input type="text" id="recipe-name" name="recipe-name" required>
+
+            <label for="ingredients">Ingredients:</label>
+            <textarea id="ingredients" name="ingredients" required></textarea>
+
+            <label for="instructions">Instructions:</label>
+            <textarea id="instructions" name="instructions" required></textarea>
+            <div class="btn-form">
+                <button type="submit">Submit Recipe</button>
+                <button type="button" onclick="window.history.back();">Cancel</button>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
